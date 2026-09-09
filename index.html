@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Vanessa Hensel | Mandalas</title>
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<title>Energia das Cores | Vanessa Hensel</title>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+  rel="stylesheet">
 
 <style>
 
@@ -15,480 +22,559 @@
 }
 
 body {
+
   margin: 0;
+
   font-family: 'Inter', sans-serif;
+
   background:
-    linear-gradient(to bottom, rgba(255,255,255,0.88), rgba(244,238,228,0.96)),
-    url('fundo.jpg.png') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255,255,255,0.95),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #faf7f0 0%,
+      #f1eadc 100%
+    );
+
   color: #2f2a25;
+
 }
 
 .container {
+
   max-width: 500px;
+
   width: 100%;
+
   margin: auto;
-  padding: 40px 22px 50px;
-  text-align: center;
+
+  padding: 35px 22px 50px;
+
 }
 
-/* LOGO */
 
-.logo-wrapper {
-  width: 220px;
-  height: 220px;
-  margin: 0 auto 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* BOTÃO VOLTAR */
+
+.back {
+
+  display: inline-block;
+
+  margin-bottom: 25px;
+
+  color: #8f7040;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.3s;
+
+}
+
+.back:hover {
+
+  color: #b9985c;
+
+  transform: translateX(-2px);
+
+}
+
+
+/* CABEÇALHO */
+
+.header {
+
+  text-align: center;
+
+  margin-bottom: 35px;
+
 }
 
 .logo {
-  width: 200px;
-  max-width: 100%;
-  height: auto;
-}
 
-/* TÍTULO */
+  width: 120px;
+
+  margin-bottom: 15px;
+
+}
 
 h1 {
+
   font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  letter-spacing: 1.5px;
+
+  font-size: 27px;
+
   font-weight: 500;
-  margin: 0 0 6px;
+
+  color: #8f7040;
+
+  margin: 0;
+
 }
 
-.tagline {
-  font-size: 14px;
-  letter-spacing: 0.5px;
-  opacity: 0.65;
-  margin-bottom: 32px;
-}
 
-/* BOTÕES */
+/* INTRODUÇÃO */
 
-.btn {
-  display: block;
-  margin: 13px 0;
-  padding: 16px 18px;
-  border-radius: 40px;
-  text-decoration: none;
-  color: #302b26;
-  background: rgba(255,255,255,0.82);
-  border: 1px solid rgba(164,132,82,0.55);
-  backdrop-filter: blur(8px);
-  transition: all 0.3s ease;
-  font-size: 14px;
-  letter-spacing: 0.2px;
-}
+.intro {
 
-.btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 22px rgba(80,60,35,0.12);
-}
-
-.gold {
-  background: linear-gradient(135deg, #b9985c, #ddc58e);
-  color: white;
-  border: none;
-  box-shadow: 0 5px 18px rgba(140,105,55,0.18);
-}
-
-.gold:hover {
-  filter: brightness(1.05);
-}
-
-/* DIVISOR */
-
-.divider {
-  width: 55px;
-  height: 1px;
-  background: #b9985c;
-  opacity: 0.6;
-  margin: 38px auto;
-}
-
-/* SEÇÕES */
-
-.section {
-  margin-top: 38px;
-  text-align: left;
-}
-
-.section-title {
   text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-size: 23px;
-  font-weight: 500;
-  color: #8f7040;
-  margin-bottom: 22px;
-}
 
-.section p {
   font-size: 14px;
+
   line-height: 1.8;
-  color: #4a443e;
+
+  color: #5a5249;
+
+  margin-bottom: 35px;
+
 }
 
-/* VALORES */
-
-.price-box {
-  background: rgba(255,255,255,0.68);
-  border: 1px solid rgba(164,132,82,0.28);
-  border-radius: 18px;
-  padding: 18px 20px;
-  margin-bottom: 20px;
-}
-
-.price-box h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  font-weight: 500;
-  color: #8f7040;
-  margin: 0 0 15px;
-}
-
-.price-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 9px 0;
-  border-bottom: 1px solid rgba(100,80,50,0.12);
-  font-size: 14px;
-}
-
-.price-row:last-child {
-  border-bottom: none;
-}
-
-.price {
-  font-weight: 500;
-}
-
-/* AVISO */
-
-.notice {
-  background: rgba(185,152,92,0.10);
-  border-left: 3px solid #b9985c;
-  padding: 15px 16px;
-  border-radius: 8px;
-  margin: 18px 0;
-  font-size: 13px;
-  line-height: 1.7;
-  text-align: left;
-}
 
 /* CORES */
 
 .color-item {
-  margin-bottom: 18px;
+
+  background: rgba(255,255,255,0.62);
+
+  border: 1px solid rgba(164,132,82,0.20);
+
+  border-radius: 15px;
+
+  padding: 15px 17px;
+
+  margin-bottom: 12px;
+
+  box-shadow:
+    0 4px 15px rgba(80,60,35,0.03);
+
 }
 
 .color-item strong {
+
   font-family: 'Playfair Display', serif;
-  font-size: 17px;
+
+  font-size: 18px;
+
   font-weight: 500;
+
   color: #8f7040;
+
 }
 
 .color-item p {
-  margin: 4px 0 0;
+
+  margin: 5px 0 0;
+
   font-size: 13px;
+
   line-height: 1.6;
+
+  color: #4a443e;
+
 }
 
-/* CONHEÇA */
+
+/* DIVISOR */
+
+.divider {
+
+  width: 55px;
+
+  height: 1px;
+
+  background: #b9985c;
+
+  opacity: 0.6;
+
+  margin: 40px auto;
+
+}
+
+
+/* CONHEÇA AS MANDALAS */
+
+.section-title {
+
+  text-align: center;
+
+  font-family: 'Playfair Display', serif;
+
+  font-size: 23px;
+
+  font-weight: 500;
+
+  color: #8f7040;
+
+  margin-bottom: 22px;
+
+}
 
 .about {
+
   text-align: left;
+
   font-size: 14px;
+
   line-height: 1.9;
+
   color: #4a443e;
+
+}
+
+.about p {
+
+  margin-bottom: 20px;
+
 }
 
 .about strong {
+
   color: #8f7040;
+
   font-weight: 500;
+
 }
+
+
+/* BOTÃO FINAL */
+
+.home-btn {
+
+  display: block;
+
+  text-align: center;
+
+  padding: 15px;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #b9985c,
+      #ddc58e
+    );
+
+  font-size: 14px;
+
+  margin-top: 35px;
+
+  box-shadow:
+    0 5px 18px rgba(140,105,55,0.15);
+
+  transition: 0.3s;
+
+}
+
+.home-btn:hover {
+
+  filter: brightness(1.05);
+
+  transform: translateY(-2px);
+
+}
+
 
 /* RODAPÉ */
 
 .footer {
-  margin-top: 45px;
+
+  text-align: center;
+
+  margin-top: 35px;
+
   font-size: 11px;
+
   opacity: 0.5;
-  letter-spacing: 0.5px;
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
+
 <div class="container">
 
-<!-- LOGO -->
 
-<div class="logo-wrapper">
-  <img src="logo.png" class="logo" alt="Vanessa Hensel Mandalas">
-</div>
+<!-- VOLTAR -->
 
-<h1>Vanessa Hensel</h1>
+<a
+  href="index.html"
+  class="back">
 
-<div class="tagline">
-  Encontre seu centro. Decore seu destino.
-</div>
+  ← Voltar para a página inicial
 
-
-<!-- BOTÕES PRINCIPAIS -->
-
-<a class="btn gold"
-   href="https://wa.me/5551996738390?text=Ol%C3%A1%21%20Gostaria%20de%20fazer%20uma%20encomenda%20de%20uma%20mandala"
-   target="_blank">
-  💬 Fazer uma encomenda
-</a>
-
-<a class="btn"
-   href="https://wa.me/5551996738390?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20visita%20para%20conhecer%20as%20mandalas%20e%20outras%20pe%C3%A7as.%20Poderia%20me%20informar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F"
-   target="_blank">
-  📅 Agendar visita
-</a>
-
-<a class="btn"
-   href="https://instagram.com/va_mandalas"
-   target="_blank">
-  📸 Instagram
 </a>
 
 
-<div class="divider"></div>
+<!-- CABEÇALHO -->
 
+<div class="header">
 
-<!-- VALORES -->
+  <img
+    src="logo.png"
+    class="logo"
+    alt="Vanessa Hensel Mandalas">
 
-<div class="section">
-
-<h2 class="section-title">Valores e tamanhos</h2>
-
-<div class="price-box">
-
-<h3>Mandalas</h3>
-
-<div class="price-row">
-  <span>15 cm</span>
-  <span class="price">R$ 145,00</span>
-</div>
-
-<div class="price-row">
-  <span>20 cm</span>
-  <span class="price">R$ 165,00</span>
-</div>
-
-<div class="price-row">
-  <span>30 cm</span>
-  <span class="price">R$ 315,00</span>
-</div>
-
-<div class="price-row">
-  <span>40 cm</span>
-  <span class="price">R$ 395,00</span>
-</div>
-
-<div class="price-row">
-  <span>50 cm</span>
-  <span class="price">R$ 535,00</span>
-</div>
-
-<div class="price-row">
-  <span>60 cm</span>
-  <span class="price">R$ 685,00</span>
-</div>
-
-<div class="price-row">
-  <span>70 cm</span>
-  <span class="price">R$ 835,00</span>
-</div>
-
-<div class="price-row">
-  <span>80 cm</span>
-  <span class="price">R$ 995,00</span>
-</div>
-
-<div class="price-row">
-  <span>90 cm</span>
-  <span class="price">R$ 1.300,00</span>
-</div>
-
-<div class="price-row">
-  <span>1 metro</span>
-  <span class="price">R$ 2.700,00</span>
-</div>
+  <h1>
+    Energia das cores
+  </h1>
 
 </div>
 
 
-<div class="price-box">
+<!-- INTRODUÇÃO -->
 
-<h3>Personalização de peças</h3>
+<div class="intro">
 
-<div class="price-row">
-  <span>Taças, copos e xícaras</span>
-  <span class="price">R$ 30,00 / peça</span>
-</div>
+  <p>
+    As cores podem transmitir diferentes sensações,
+    significados e intenções.
+  </p>
 
-<div class="price-row">
-  <span>Pratos, bowls e peças maiores</span>
-  <span class="price">R$ 50,00 / peça</span>
-</div>
-
-</div>
-
-
-<div class="notice">
-
-<strong>Importante:</strong><br>
-
-Os valores informados para a personalização são referentes
-<strong>somente à arte/pintura</strong>. O valor da peça não está incluso.
-
-<br><br>
-
-Você pode trazer sua própria peça para personalizar.
-
-Caso prefira, também podemos providenciar a peça para você.
-Nesse caso, o cliente realiza a compra do item e solicita a entrega
-diretamente para nós. Após recebermos a peça, fazemos a personalização
-e o cliente realiza o acerto referente ao valor da arte.
-
-<br><br>
-
-<strong>Quer receber a peça completa, pronta para usar ou presentear?</strong>
-Também podemos fazer! O valor final será composto pelo valor do item
-+ valor da personalização.
+  <p>
+    Conheça alguns dos significados associados
+    a cada cor.
+  </p>
 
 </div>
 
 
-<div class="notice">
-
-<strong>Cuidados com as peças:</strong><br>
-
-Apesar de delicadas, as peças personalizadas podem ser lavadas
-normalmente com esponja e detergente e podem ir ao
-<strong>micro-ondas e ao freezer.</strong>
-
-</div>
-
-</div>
-
-
-<div class="divider"></div>
-
-
-<!-- ENERGIA DAS CORES -->
-
-<div class="section">
-
-<h2 class="section-title">Energia das cores</h2>
+<!-- CORES -->
 
 <div class="color-item">
-<strong>Branco</strong>
-<p>Paz, inocência, pureza e limpeza.</p>
+
+  <strong>Branco</strong>
+
+  <p>
+    Paz, inocência, pureza e limpeza.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Bege</strong>
-<p>Resistência, segurança, aconchego e firmeza.</p>
+
+  <strong>Bege</strong>
+
+  <p>
+    Resistência, segurança, aconchego e firmeza.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Amarelo</strong>
-<p>Criatividade, sabedoria, positividade, felicidade e energia.</p>
+
+  <strong>Amarelo</strong>
+
+  <p>
+    Criatividade, sabedoria, positividade,
+    felicidade e energia.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Laranja</strong>
-<p>Transformação, bom humor, alegria, força e amizade.</p>
+
+  <strong>Laranja</strong>
+
+  <p>
+    Transformação, bom humor, alegria,
+    força e amizade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Salmão</strong>
-<p>Transformação, bom humor, alegria, força e amizade.</p>
+
+  <strong>Salmão</strong>
+
+  <p>
+    Transformação, bom humor, alegria,
+    força e amizade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Vermelho</strong>
-<p>Força, paixão, poder, energia, coragem e ousadia.</p>
+
+  <strong>Vermelho</strong>
+
+  <p>
+    Força, paixão, poder, energia,
+    coragem e ousadia.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Rosa</strong>
-<p>Amor, suavidade, gentileza, romantismo e bondade.</p>
+
+  <strong>Rosa</strong>
+
+  <p>
+    Amor, suavidade, gentileza,
+    romantismo e bondade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Lilás</strong>
-<p>Magia, mistério, intuição, espiritualidade e proteção.</p>
+
+  <strong>Lilás</strong>
+
+  <p>
+    Magia, mistério, intuição,
+    espiritualidade e proteção.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Roxo</strong>
-<p>Magia, mistério, intuição, espiritualidade e proteção.</p>
+
+  <strong>Roxo</strong>
+
+  <p>
+    Magia, mistério, intuição,
+    espiritualidade e proteção.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Violeta</strong>
-<p>Magia, mistério, intuição, espiritualidade e proteção.</p>
+
+  <strong>Violeta</strong>
+
+  <p>
+    Magia, mistério, intuição,
+    espiritualidade e proteção.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Azul</strong>
-<p>Calma, tranquilidade, confiança, sabedoria e integridade.</p>
+
+  <strong>Azul</strong>
+
+  <p>
+    Calma, tranquilidade, confiança,
+    sabedoria e integridade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Índigo</strong>
-<p>Consciência, arte, verdade, idealismo e percepção.</p>
+
+  <strong>Índigo</strong>
+
+  <p>
+    Consciência, arte, verdade,
+    idealismo e percepção.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Turquesa</strong>
-<p>Autoexpressão e desenvolvimento.</p>
+
+  <strong>Turquesa</strong>
+
+  <p>
+    Autoexpressão e desenvolvimento.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Verde</strong>
-<p>Cura, vida, crescimento, equilíbrio, serenidade e harmonia.</p>
+
+  <strong>Verde</strong>
+
+  <p>
+    Cura, vida, crescimento, equilíbrio,
+    serenidade e harmonia.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Marrom</strong>
-<p>Resistência, segurança, aconchego e firmeza.</p>
+
+  <strong>Marrom</strong>
+
+  <p>
+    Resistência, segurança, aconchego e firmeza.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Cinza</strong>
-<p>Neutralidade, maturidade e seriedade.</p>
+
+  <strong>Cinza</strong>
+
+  <p>
+    Neutralidade, maturidade e seriedade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Preto</strong>
-<p>Poder, elegância, inteligência e formalidade.</p>
+
+  <strong>Preto</strong>
+
+  <p>
+    Poder, elegância, inteligência e formalidade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Prata</strong>
-<p>Neutralidade, maturidade e seriedade.</p>
+
+  <strong>Prata</strong>
+
+  <p>
+    Neutralidade, maturidade e seriedade.
+  </p>
+
 </div>
+
 
 <div class="color-item">
-<strong>Dourado</strong>
-<p>Prosperidade, sucesso, boas energias, dinheiro e luz interior.</p>
-</div>
+
+  <strong>Dourado</strong>
+
+  <p>
+    Prosperidade, sucesso, boas energias,
+    dinheiro e luz interior.
+  </p>
 
 </div>
 
+
+<!-- DIVISOR -->
 
 <div class="divider"></div>
 
@@ -497,65 +583,113 @@ normalmente com esponja e detergente e podem ir ao
 
 <div class="section">
 
-<h2 class="section-title">Conheça as mandalas</h2>
+  <h2 class="section-title">
+    Conheça as mandalas
+  </h2>
 
-<div class="about">
 
-<p>
-Cada mandala é uma peça <strong>única, artesanal e personalizada</strong>,
-criada especialmente para cada pessoa e para o propósito que deseja
-representar.
-</p>
+  <div class="about">
 
-<p>
-O trabalho é realizado através da técnica de
-<strong>pontilhismo</strong>, em que cada ponto é feito
-individualmente à mão, um a um.
-</p>
+    <p>
 
-<p>
-Mais do que uma peça decorativa, a mandala pode carregar
-<strong>cores, formas e significados</strong> escolhidos de acordo
-com a intenção de quem a recebe.
-</p>
+      Cada mandala é uma peça
+      <strong>única, artesanal e personalizada</strong>,
+      criada especialmente para cada pessoa
+      e para o propósito que deseja representar.
 
-<p>
-Cada detalhe é cuidadosamente pensado e aplicado manualmente,
-fazendo com que nenhuma peça seja exatamente igual à outra.
-É justamente essa singularidade que torna cada mandala especial.
-</p>
+    </p>
 
-<p>
-As mandalas possuem <strong>6 mm de espessura</strong> e são
-<strong>impermeabilizadas</strong>, recebendo um acabamento pensado
-para preservar a pintura e a beleza da peça.
-</p>
 
-<p>
-Também são feitas peças personalizadas em diferentes objetos,
-como taças, copos, xícaras, pratos, vasos e outras peças.
-Assim, a arte pode estar presente tanto na decoração quanto
-em objetos do dia a dia.
-</p>
+    <p>
 
-<p>
-Tudo é produzido de forma artesanal, com tempo, cuidado e atenção
-a cada ponto. Do primeiro detalhe ao último, cada peça carrega
-um pouco da história e da intenção de quem a escolheu.
-</p>
+      O trabalho é realizado através da técnica de
+      <strong>pontilhismo</strong>, em que cada ponto
+      é feito individualmente à mão, um a um.
+
+    </p>
+
+
+    <p>
+
+      Mais do que uma peça decorativa,
+      a mandala pode carregar
+      <strong>cores, formas e significados</strong>
+      escolhidos de acordo com a intenção
+      de quem a recebe.
+
+    </p>
+
+
+    <p>
+
+      Cada detalhe é cuidadosamente pensado
+      e aplicado manualmente, fazendo com que
+      nenhuma peça seja exatamente igual à outra.
+      É justamente essa singularidade que torna
+      cada mandala especial.
+
+    </p>
+
+
+    <p>
+
+      As mandalas possuem
+      <strong>6 mm de espessura</strong>
+      e são <strong>impermeabilizadas</strong>,
+      recebendo um acabamento pensado para
+      preservar a pintura e a beleza da peça.
+
+    </p>
+
+
+    <p>
+
+      Também são feitas peças personalizadas
+      em diferentes objetos, como taças, copos,
+      xícaras, pratos, vasos e outras peças.
+      Assim, a arte pode estar presente tanto
+      na decoração quanto em objetos do dia a dia.
+
+    </p>
+
+
+    <p>
+
+      Tudo é produzido de forma artesanal,
+      com tempo, cuidado e atenção a cada ponto.
+      Do primeiro detalhe ao último, cada peça
+      carrega um pouco da história e da intenção
+      de quem a escolheu.
+
+    </p>
+
+  </div>
 
 </div>
 
-</div>
+
+<!-- VOLTAR -->
+
+<a
+  href="index.html"
+  class="home-btn">
+
+  Voltar para a página inicial
+
+</a>
 
 
 <!-- RODAPÉ -->
 
 <div class="footer">
-© Vanessa Hensel · Mandalas Artesanais
+
+  © Vanessa Hensel · Mandalas Artesanais
+
 </div>
+
 
 </div>
 
 </body>
+
 </html>
